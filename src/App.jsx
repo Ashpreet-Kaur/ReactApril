@@ -1,4 +1,6 @@
 
+import ConditionalRendering from './components/ConditionalRendering'
+import Count from './components/Count'
 import Counter from './components/Counter'
 import InstagramPost from './components/InstagramPost'
 import Products from './components/Products'
@@ -10,7 +12,8 @@ function App() {
   return(
   <>
 
-    <InstagramPost />
+<ConditionalRendering />
+   
   </>
 
   )
