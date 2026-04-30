@@ -1,16 +1,13 @@
-function Products({name, description, src}){
+function Products({name, description, src, price}){
 
-
-
- 
-
-    return(
+return(
         <>
         <div className="card" style={{width: "18rem"}} >
         <img src={src} className="card-img-top" alt="..."/>
         <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <p className="card-text">{description}</p>
+        <p className="card-text">Price: ${price}</p>
         <a href="#" className="btn btn-primary">Buy {name}</a>
         </div>
 </div>

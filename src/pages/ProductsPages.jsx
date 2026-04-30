@@ -1,28 +1,33 @@
 import Products from "../components/Products"
 import image from "../assets/hero.png"
 import "../styles/Products.css"
+import products from "../Data/products"
 
 function ProductsPage(){
 
 
-    const product1 ={
-            name: "Product1",
-            description: "This is description of product 1",
-            src : image
-    }
+    console.log(products)
 
-
-    const product2 ={
-        name: "Product2",
-        description: "This is description of product 2",
-        src : image
-    }
     
-    const product3 ={
-        name: "Product3",
-        description: "This is description of product 3",
-        src : image 
-    }
+
+    // const product1 ={
+    //         name: "Product1",
+    //         description: "This is description of product 1",
+    //         src : image
+    // }
+
+
+    // const product2 ={
+    //     name: "Product2",
+    //     description: "This is description of product 2",
+    //     src : image
+    // }
+    
+    // const product3 ={
+    //     name: "Product3",
+    //     description: "This is description of product 3",
+    //     src : image 
+    // }
   
 
 
@@ -30,9 +35,16 @@ function ProductsPage(){
         <>
 
         <div className="products-container">
-            <Products name={product1.name} description={product1.description} src={product1.src}/>
-            <Products name={product2.name} description={product2.description} src={product2.src}/>
-            <Products name={product3.name} description={product3.description} src={product3.src}/>
+          {
+            products.map((product)=>{
+                return(
+                    <>
+                        <Products name={product.name} description={product.description} 
+                        src={product.src} price={product.price} />
+                    </>
+                )
+            })
+          }
         </div>
 
             
