@@ -5,6 +5,7 @@ import Counter from './components/Counter'
 import InstagramPost from './components/InstagramPost'
 import ListRendering from './components/ListRendering'
 import Products from './components/Products'
+import StudentsPage from './components/StudentsPage'
 import ProductsPage from './pages/ProductsPages'
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
   return(
   <>
 
-    <ProductsPage />
+  <StudentsPage />
+
+    {/* <ProductsPage /> */}
 
 {/* 
   <ListRendering /> */}
